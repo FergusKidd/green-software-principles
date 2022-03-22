@@ -1,0 +1,31 @@
+### Embodied_Carbon 
+Build applications that are hardware efficient
+
+The device you are reading this document on released some carbon in its creation, once it reaches the end of life disposing of it may release more. Embodied carbon (otherwise referred to as "Embedded Carbon") is the amount of carbon pollution emitted during the creation and disposal of a device. When calculating the total carbon pollution for the computers running your software, account for both the carbon pollution to run the computer and the embodied carbon of the computer.
+
+Depending on the carbon intensity of your energy mix the embodied carbon cost of a device can be significant compared to the carbon cost of the electricity powering it.
+
+For example, a 2019 R640 Dell Server has an amortized embedded carbon cost of 320 kg CO2eq/year. It’s also expected to consume 1760.3 kWh/year. The average carbon intensity in the EU is 0.276 kg CO2eq/kWh.
+
+Therefore the total carbon cost is going to be 320 + (0.276 * 1760.3) = 805 kg of carbon/year of which 320 kg or about 40% is from the embodied carbon. Embodied carbon is a significant contributor to the total emitted carbon of hardware.
+
+By thinking of embodied carbon in this way, any device, even one that is not consuming electricity, is effectively releasing carbon over its lifetime.
+
+Don't waste hardwarepermalink
+By the time you buy a computer, it's already emitted a whole load of carbon. They also have an expiry date, computers get old, can't handle modern workloads, and need to be refreshed. If you think about it this way, hardware is then a proxy for carbon, so as Green Software Engineer, we must be hardware-efficient if our goal is to be carbon-efficient.
+
+You can do many things to be hardware efficient, but one thing you can do is help extend the expiry date on hardware. Computers don’t wear out, there are no moving parts, they just become obsolete. They become obsolete because we are continually creating software that pushes limits.
+
+Extending the lifespan of hardwarepermalink
+A way to account for embodied carbon is to amortize the carbon over the expected life span of a device. For example, if it took 4 tons of carbon to build a server and we expect the server to have a 4-year lifespan, we can consider this equivalent to 1 ton of carbon being released per year during its lifespan.
+
+alt_text
+Embodied carbon of a server amortized over 4 years.
+If we just added one more year to the lifespan of our 2019 R640 Dell Server then the amortized carbon drops from 320kg CO2eq/year to 256 kg CO2eq/year.
+
+alt_text
+Embodied carbon of the same server amortized over 5 years.
+Hardware is retired either because it breaks down or because it struggles to handle modern workloads. Software cannot help with the first however if we focus on building applications that can run on older hardware, we can help with the second.
+
+Reference
+- V1: https://principles.green/principles/embodied-carbon/
